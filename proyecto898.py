@@ -1,9 +1,8 @@
-
+#importamos subprocess
 import subprocess
 
-#PRUEBA DE COMMIT
-#segunda prueba
-
-comando = "x-terminal-emulator -e poweroff"
+#le decimos al proceso que abra la terminal y ejecute "poweroff"
+comando = "systemctl poweroff"
 
 subprocess.run(comando, shell=True)
+
